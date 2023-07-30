@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.watch{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://img.freepik.com/premium-vector/2019-happy-new-years-background-count-down_41981-830.jpg?w=900);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+    ;
+    
+}
+
+.div-ctn{
+    height: 300px;
+    width: 600px;
+    background-color:transparent;
+    border: 5px solid cyan;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* opacity: 7; */
+    position: relative;
+}
+.div-ctn::before,.div-ctn::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    background-size: cover;
+    border-radius: 15px;
+
+    opacity: 0.4;
+
+
+}
+#digital{
+    color: cyan;
+   opacity: 1;
+    font-size: 120px;
+    z-index: 12;
+    opacity: 100;
+   
+}
+
+#currentDate{
+    border: 2px solid black;
+    background-color: black;
+    font-size: 35px;
+    border-radius: 5px;
+    height: 40px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    transform: translateY(-25px);
+    z-index: 100;
+}
